@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+     background-color: #dddddd;
+    position: fixed;
+    height: 100% ;
+    overflow:auto;
+    
+    
+}
+li a {
+    display: block;
+    width: 100px;
+    
+    text-decoration: none;
+    padding: 8px 16px;
+}
+li a.homepage {
+    background-color: #4CAF50;
+    color: white;
+}
+li a:hover:not(.homepage) {
+    background-color: #555;
+    color: white;
+}

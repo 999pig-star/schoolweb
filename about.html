@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}/*重置样式*/
+        nav{
+            background:#2c3e50;
+            background-size: cover;
+            background-position: center; 
+            
+        }
+        nav img{
+            height: 50px;;          /*设置图片高度*/
+            opacity: 0.8;   /*设置图片右边距*/
+            min-width: 50px;
+        }
+        nav ul{
+            display:flex;         /*使用flex横向布局*/
+            list-style:none;      /*去掉默认的列表样式*/
+            max-width:1000px;     /*设置最大宽度*/
+            margin:0 auto;        /*居中对齐*/ 
+        }
+        nav a{
+            display:block;        /*设置为块级元素，方便设置内边距*/
+            color:#fff;
+            text-decoration:none; /*去掉下划线*/
+            
+            padding:16px 24px;    /*设置内边距*/
+        }
+        .school-gate{
+            float:right;
+            margin:30px auto;
+            max-width:1000px;
+            width:100%;
+        }
+        .cheeryblossom{
+            float:left;
+            margin:30px auto;
+            max-width:1000px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<!--导航栏核心-->
+
+<nav>
+    <ul>
+        <li><img src="schoollogo.jpg" alt="学校图标"></li>
+        <li><a href="index.html">首页</a ></li>
+        <li><a href="tools.html">实用工具</a ></li>
+        <li><a href="news.html">校园资讯</a ></li>
+        <li><a href="lostfound.html">失物招领</a ></li>
+        <li><a href="clubs.html">校园社团</a ></li>
+        <li><a href="photo.html">校园相册</a ></li>
+        <li><a href="about.html">关于我们</a ></li>
+    </ul>
+</nav>
+<div>
+    <img class="school-gate" src="schoolgate.jpg" alt="学校大门" style="max-width:50%;height:50%;">
+</div>    
+<div>
+    <img class="cheeryblossom" src="cherryblossom.jpg" alt="樱花" style="max-width:50%;height:50%;">    
+</div>
+</body>
+</html>
