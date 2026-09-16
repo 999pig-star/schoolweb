@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>实用工具 - 校园小站</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        nav{
+            background:#2c3e50;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+            max-width:1000px;
+            margin:0 auto;
+        }
+        nav a{ 
+            display:block;
+            color:#fff;
+            text-decoration:none;
+            padding:16px 24px;
+        }
+        nav a:hover{
+            background:#34495e;
+        }
+        .container{
+            max-width:1000px;
+            margin:30px auto;
+            padding:0 15px;
+        }
+        .tool-item{
+            background:#f4f4f4;
+            padding:20px;
+            margin:12px 0;
+            border-radius:8px;
+        }
+        .tool-item a{
+            color:#2980b9;
+            font-size:18px;
+        }
+        .tool-item a:hover{
+            color:black;
+        }
+        
+            
+        .tool-item p{
+            margin-top:8px;
+            color:#555;
+        }
+    </style>
+</head>
+<body>
+<!-- 导航栏，和index.html完全一样，保证全站统一 -->
+<nav>
+    <ul>
+        <li><a href="index.html">首页</a ></li>
+        <li><a href="tools.html">实用工具</a ></li>
+        <li><a href="news.html">校园资讯</a ></li>
+        <li><a href="secondhand.html">失物招领</a ></li>
+        <li><a href="clubs.html">校园社团</a ></li>
+        <li><a href="photo.html">校园相册</a ></li>
+        <li><a href="about.html">关于我们</a ></li>
+        
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>校园实用工具</h1>
+    <p>校内常用网站、信息汇总，一键跳转</p >
+
+    <div class="tool-item">
+        <a href="http://zhjw1.jju.edu.cn/jwglxt/xtgl/login_slogin.html">教务系统</a >
+        <p>查课表、成绩、选课入口（把#替换成真实网址）</p >
+    </div>
+    <div class="tool-item">
+        <a href="http://v1.chaoxing.com/wechatSet/mobileIndex?type=1&fidEnc=a8fdb59c745a645b&pageId=3836&wxAppid=wx468ca8267fb2176d&menuType=v1page">图书馆系统</a >
+        <p>图书借阅、馆藏查询、开馆时间</p >
+    </div>
+    <div class="tool-item">
+        <a href="http://www.jju.edu.cn/">校园网自助平台</a >
+        <p>校园网充值、故障报修</p >
+    </div>
+    
+   <div class="tool-item">
+    <span onclick="showCalendar()" style="color:#2980b9;cursor:pointer;font-size:18px;text-decoration: underline;">校历查看</span>
+    <img id="calendarImg" src="Campus Calendar.png" alt="校历" style="display:none; width:100%; margin-top:10px;">
+    <p>放假安排、考试周时间</p >
+    </div>
+
+    <script>
+    function showCalendar(){
+        const img = document.getElementById('calendarImg');
+        if(img.style.display === "none"){
+            img.style.display = "block";
+        }else{
+            img.style.display = "none";
+        }
+    }
+    </script>
+   
+    <div class="tool-item">
+        <a href="#">校内地图</a >
+        <p>教学楼、食堂、快递点位置</p >
+    </div>
+</div>
+
+</body>
+</html>
